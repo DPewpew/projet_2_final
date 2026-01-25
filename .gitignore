@@ -1,0 +1,41 @@
+# =========================
+# Secrets / credentials
+# =========================
+secrets.toml
+.secrets.toml
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Data volumineuses (>100MB)
+# =========================
+data/imdb/out/**
+!data/imdb/out/README.md
+
+
+# =========================
+# Notebooks / temp
+# =========================
+.ipynb_checkpoints/
+*.log
+*.tmp
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
