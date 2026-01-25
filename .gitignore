@@ -1,41 +1,27 @@
-# =========================
-# Secrets / credentials
-# =========================
-secrets.toml
-.secrets.toml
-
-# =========================
 # Python
-# =========================
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-.env
-.venv
+
+# Environnements
+.venv/
 venv/
+env/
+pyvenv.cfg
 
-# =========================
-# Streamlit
-# =========================
+# Streamlit secrets
 .streamlit/secrets.toml
+.secret.toml
+secrets.toml
 
-# =========================
-# Data volumineuses (>100MB)
-# =========================
-data/imdb/out/**
-!data/imdb/out/README.md
+# Données lourdes / temporaires
+data/imdb/out/principals_filtered_tmp.csv
+data/imdb/out/**/*.csv
 
-
-# =========================
-# Notebooks / temp
-# =========================
-.ipynb_checkpoints/
-*.log
-*.tmp
-
-# =========================
 # OS
-# =========================
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log

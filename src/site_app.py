@@ -22,13 +22,18 @@ from typing import Optional, Set
 import pandas as pd
 import streamlit as st
 
+# Chargement des données ML
 from src.ml_data import load_films_ml, load_person_index
+
+# Moteur de recommandation
 from src.reco_engine import (
     get_recommender,
     top_by_genre,
     search_person_names,
     recommend_from_person,
 )
+
+# TMDB (enrichissement / fallback)
 from src.tmdb_cache import (
     TmdbConfig,
     build_candidate_tconst_set,
@@ -38,6 +43,7 @@ from src.tmdb_cache import (
     tmdb_results_to_tconst_list,
     tmdb_overview_from_tconst,
 )
+
 
 
 # ============================================================

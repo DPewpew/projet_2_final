@@ -11,6 +11,8 @@
 # ============================================================
 
 import streamlit as st
+from src.market_app import render_market
+from src.site_app import render_site
 
 
 # -----------------------------
