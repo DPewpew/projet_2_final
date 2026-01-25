@@ -419,8 +419,19 @@ def render_site():
                         pass
 
                 # Réalisateur / casting (depuis films_ml)
-                director = (r.get("director_name") or "").strip()
-                cast_top = (r.get("cast_top") or "").strip()
+                def _safe_str(x) -> str:
+                    if x is None:
+                        return ""
+                    try:
+                        # NaN (float) -> vide
+                        if pd.isna(x):
+                            return ""
+                    except Exception:
+                        pass
+                    return str(x).strip()
+
+                director = _safe_str(r.get("director_name"))
+                cast_top = _safe_str(r.get("cast_top"))
 
                 if director:
                     st.write(f"**Réalisateur :** {director}")
