@@ -371,7 +371,7 @@ else:  # "DB / Notes"
     
     st.info(
                 """
-                ###Code sur le traitement de la db founie avec les filtres et la sortie en part csv
+                ### Code sur le traitement de la db founie avec les filtres et la sortie en part csv
                 
                 
                 
@@ -875,7 +875,7 @@ else:  # "DB / Notes"
         )
     st.info(
                 """
-                ###Code sur le systeme de recommandation 
+                ### Code sur le systeme de recommandation 
                 
                 # ============================================================
                 # reco_engine.py
