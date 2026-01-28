@@ -369,7 +369,7 @@ else:  # "DB / Notes"
             )
     
     
-    st.info(
+    st.write(
                 """
                 ### Code sur le traitement de la db founie avec les filtres et la sortie en part csv
                 
@@ -385,6 +385,7 @@ else:  # "DB / Notes"
 
                 # Découpage des sorties en parts (par nombre de lignes)
                 FILMS_PART_ROWS = 50_000         # 100k films -> 2 parts
+                
                 CREDITS_PART_ROWS = 250_000      # ajuste pour rester <100MB/part
 
                 # =========================
@@ -873,7 +874,7 @@ else:  # "DB / Notes"
         et de l’intégration ML dans une application réelle.
         """
         )
-    st.info(
+    st.write(
                 """
                 ### Code sur le systeme de recommandation 
                 
